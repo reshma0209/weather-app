@@ -106,7 +106,7 @@ function App()
   };
   const search=async()=>{
     setLoading(true);
-    let url=`http://api.openweathermap.org/data/2.5/weather?q=${text}&appid=${api_key}&units=metric`;
+    let url=`https://api.openweathermap.org/data/2.5/weather?q=${text}&appid=${api_key}&units=metric`;
 
     try{
       let res=await fetch(url);
